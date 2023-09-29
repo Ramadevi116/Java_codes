@@ -1,0 +1,12 @@
+import java.util.*;
+import java.util.stream.Collectors;
+class main{
+    public static void main(String[] args){
+        String str="hii rama devi how are you";
+        String[] str1=str.split(" ");
+        List<String> inputstr=Arrays.asList(str1);
+        String joiner=inputstr.stream().collect(Collectors.joining(".","[","]"));
+        System.out.println(joiner);
+        
+    }
+}

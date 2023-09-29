@@ -1,0 +1,9 @@
+import java.util.*;
+import java.util.stream.Collectors;
+class main{
+    public static void main(String[] args){
+        String str="hii rama devi how are you?";
+       Map<String, Long> out=str.chars().mapToObj(x->(char)x).collect(Collectors.groupingBy(Object::toString,Collectors.counting()));
+       out.forEach((key,value)->System.out.println(key+" "+value));
+    }
+}
